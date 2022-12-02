@@ -72,8 +72,8 @@ module user_project_wrapper #(
 
 skullfet_inverter inv1 (
 `ifdef USE_POWER_PINS
-	.VDD(vdd),	// User area 1 5V power
-	.VSS(vss),	// User area 1 digital ground
+	.vdd(vdd),	// User area 1 5V power
+	.vss(vss),	// User area 1 digital ground
 `endif
 
     .A(io_in[8]),

@@ -41,7 +41,7 @@ set ::env(CLOCK_PERIOD) "100"
 ## Internal Macros
 ### Macro PDN Connections
 set ::env(FP_PDN_MACRO_HOOKS) "\
-	mprj vdd vss vdd vss"
+	inv1 vdd vss vdd vss"
 
 ### Macro Placement
 set ::env(MACRO_PLACEMENT_CFG) $::env(DESIGN_DIR)/macro.cfg
@@ -62,8 +62,8 @@ set ::env(RT_MAX_LAYER) {Metal4}
 set ::env(FP_PDN_CHECK_NODES) 0
 
 # The following is because there are no std cells in the example wrapper project.
-#set ::env(SYNTH_ELABORATE_ONLY) 1
-#set ::env(PL_RANDOM_GLB_PLACEMENT) 1
+set ::env(SYNTH_ELABORATE_ONLY) 1
+set ::env(PL_RANDOM_GLB_PLACEMENT) 1
 
 set ::env(PL_RESIZER_DESIGN_OPTIMIZATIONS) 0
 set ::env(PL_RESIZER_TIMING_OPTIMIZATIONS) 0
