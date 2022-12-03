@@ -262,7 +262,7 @@ library (user_project_wrapper) {
     }
     pin("io_in[8]") {
       direction : input;
-      capacitance : 0.1610;
+      capacitance : 0.4087;
     }
     pin("io_in[7]") {
       direction : input;
