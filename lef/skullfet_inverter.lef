@@ -5,29 +5,27 @@ VERSION 5.7 ;
 MACRO skullfet_inverter
   CLASS BLOCK ;
   FOREIGN skullfet_inverter ;
-  ORIGIN 4.000 0.000 ;
-  SIZE 61.000 BY 72.000 ;
+  ORIGIN -12.500 -4.000 ;
+  SIZE 32.500 BY 65.500 ;
   PIN vss
     DIRECTION INOUT ;
     USE GROUND ;
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 0.000 70.000 53.500 72.000 ;
-        RECT 12.500 62.000 14.500 70.000 ;
+        RECT 12.500 63.000 21.500 65.000 ;
       LAYER Via1 ;
-        RECT 0.500 70.500 1.500 71.500 ;
+        RECT 13.000 63.500 14.000 64.500 ;
       LAYER Metal2 ;
-        RECT 0.000 70.000 2.000 72.000 ;
+        RECT 12.500 63.000 14.500 65.000 ;
       LAYER Via2 ;
-        RECT 0.500 70.500 1.500 71.500 ;
+        RECT 13.000 63.500 14.000 64.500 ;
       LAYER Metal3 ;
-        RECT 0.000 70.000 2.000 72.000 ;
+        RECT 12.500 63.000 14.500 65.000 ;
       LAYER Via3 ;
-        RECT 0.500 70.500 1.500 71.500 ;
+        RECT 13.000 63.500 14.000 64.500 ;
       LAYER Metal4 ;
-        RECT 0.000 70.000 57.000 72.000 ;
-        RECT 55.000 0.000 57.000 70.000 ;
+        RECT 12.500 4.000 14.500 69.500 ;
     END
   END vss
   PIN vdd
@@ -36,21 +34,19 @@ MACRO skullfet_inverter
     SHAPE ABUTMENT ;
     PORT
       LAYER Metal1 ;
-        RECT 13.000 2.000 15.200 12.000 ;
-        RECT 0.000 0.000 53.500 2.000 ;
+        RECT 35.000 9.000 45.000 11.000 ;
       LAYER Via1 ;
-        RECT 0.500 0.500 1.500 1.500 ;
+        RECT 43.500 9.500 44.500 10.500 ;
       LAYER Metal2 ;
-        RECT 0.000 0.000 2.000 2.000 ;
+        RECT 43.000 9.000 45.000 11.000 ;
       LAYER Via2 ;
-        RECT 0.500 0.500 1.500 1.500 ;
+        RECT 43.500 9.500 44.500 10.500 ;
       LAYER Metal3 ;
-        RECT 0.000 0.000 2.000 2.000 ;
+        RECT 43.000 9.000 45.000 11.000 ;
       LAYER Via3 ;
-        RECT 0.500 0.500 1.500 1.500 ;
+        RECT 43.500 9.500 44.500 10.500 ;
       LAYER Metal4 ;
-        RECT -4.000 2.000 -2.000 72.000 ;
-        RECT -4.000 0.000 53.500 2.000 ;
+        RECT 43.000 4.000 45.000 69.500 ;
     END
   END vdd
   PIN Y
@@ -74,17 +70,10 @@ MACRO skullfet_inverter
     END
   END A
   OBS
-      LAYER Metal1 ;
-        RECT 16.500 65.250 20.500 69.000 ;
-        RECT 15.500 64.750 21.500 65.250 ;
-        RECT 15.500 63.500 16.000 64.750 ;
-        RECT 17.250 63.500 21.500 64.750 ;
-        RECT 15.500 62.750 21.500 63.500 ;
-        RECT 17.000 9.750 21.500 10.750 ;
-        RECT 17.000 8.750 17.250 9.750 ;
-        RECT 18.500 8.750 21.500 9.750 ;
-        RECT 17.000 8.250 21.500 8.750 ;
-        RECT 16.750 4.750 20.250 8.250 ;
+      LAYER Pwell ;
+        RECT 15.250 43.750 41.250 69.500 ;
+      LAYER Nwell ;
+        RECT 15.250 4.000 41.250 31.500 ;
       LAYER Metal2 ;
         RECT 23.650 66.500 34.450 67.850 ;
         RECT 22.300 65.150 34.450 66.500 ;
