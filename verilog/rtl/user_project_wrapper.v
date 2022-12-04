@@ -80,6 +80,17 @@ skullfet_inverter inv1 (
     .Y(io_out[16])
 );
 
+skullfet_nand nand1 (
+`ifdef USE_POWER_PINS
+	.vdd(vdd),	// User area 1 5V power
+	.vss(vss),	// User area 1 digital ground
+`endif
+
+    .A(io_in[9]),
+    .B(io_in[10]),
+    .Y(io_out[17])
+);
+
 endmodule	// user_project_wrapper
 
 `default_nettype wire
