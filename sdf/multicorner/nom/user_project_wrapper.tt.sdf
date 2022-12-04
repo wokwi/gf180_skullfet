@@ -1,7 +1,7 @@
 (DELAYFILE
  (SDFVERSION "3.0")
  (DESIGN "user_project_wrapper")
- (DATE "Sat Dec  3 22:35:40 2022")
+ (DATE "Sun Dec  4 10:31:48 2022")
  (VENDOR "Parallax")
  (PROGRAM "STA")
  (VERSION "2.3.2")
@@ -12,8 +12,11 @@
   (INSTANCE)
   (DELAY
    (ABSOLUTE
-    (INTERCONNECT io_in[8] inv1.A (3.948:3.948:3.948) (2.526:2.526:2.526))
-    (INTERCONNECT inv1.Y io_out[16] (0.335:0.335:0.335))
+    (INTERCONNECT io_in[10] nand1.B (5.213:5.213:5.213) (3.318:3.318:3.318))
+    (INTERCONNECT io_in[8] inv1.A (6.442:6.442:6.442) (4.106:4.106:4.106))
+    (INTERCONNECT io_in[9] nand1.A (6.130:6.130:6.130) (3.886:3.886:3.886))
+    (INTERCONNECT inv1.Y io_out[16] (0.350:0.350:0.350))
+    (INTERCONNECT nand1.Y io_out[17] (0.395:0.395:0.395))
    )
   )
  )
