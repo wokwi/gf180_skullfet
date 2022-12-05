@@ -39,6 +39,7 @@ module user_project_wrapper (user_clock2,
 
  skullfet_inverter inv1 (.Y(io_out[16]),
     .A(io_in[8]));
+ skullfet_logo logo1 ();
  skullfet_nand nand1 (.A(io_in[9]),
     .B(io_in[10]),
     .Y(io_out[17]));

@@ -44,6 +44,8 @@ module user_project_wrapper (user_clock2,
     .vdd(vdd),
     .Y(io_out[16]),
     .A(io_in[8]));
+ skullfet_logo logo1 (.vss(vss),
+    .vdd(vdd));
  skullfet_nand nand1 (.A(io_in[9]),
     .B(io_in[10]),
     .Y(io_out[17]),
