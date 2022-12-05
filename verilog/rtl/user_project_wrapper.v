@@ -91,6 +91,13 @@ skullfet_nand nand1 (
     .Y(io_out[17])
 );
 
+skullfet_logo logo1 (
+`ifdef USE_POWER_PINS
+	.vdd(vdd),
+	.vss(vss)
+`endif
+);
+
 endmodule	// user_project_wrapper
 
 `default_nettype wire
